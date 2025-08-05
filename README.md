@@ -3,7 +3,7 @@
 
 Token-based code completion plays a crucial role in enhancing developer productivity by predicting the next token in a code sequence. This project presents a comparative analysis of four Transformer-based models fine-tuned specifically for Python code completion tasks.
 
-## 📌 Overview
+## Overview
 
 This study evaluates and compares the performance of the following pre-trained Transformer models:
 
@@ -14,18 +14,18 @@ This study evaluates and compares the performance of the following pre-trained T
 
 All models were fine-tuned using the **Python subset of the CodeSearchNet dataset** under identical training conditions.
 
-## 🧠 Objective
+## Objective
 
 To determine which Transformer architecture offers the best performance for token-based code completion and to understand the trade-offs between model size, overfitting, and generalization.
 
-## 📊 Evaluation Metrics
+## Evaluation Metrics
 
 Each model was evaluated using:
 
 * **Token-level Accuracy**
 * **Perplexity**
 
-## 🏆 Key Findings
+## Key Findings
 
 | Model Name         | Token Accuracy | Perplexity | Notes                                  |
 | ------------------ | -------------- | ---------- | -------------------------------------- |
@@ -37,12 +37,12 @@ Each model was evaluated using:
 * **CodeT5-Base** achieved the highest accuracy but suffered from overfitting, reducing its practical reliability.
 * **CodeGen-350M-Multi** demonstrated the best balance of accuracy and perplexity, making it the most reliable for real-world use cases.
 
-## 🧪 Dataset
+## Dataset
 
 * **Source**: [CodeSearchNet (Python subset)](https://github.com/github/CodeSearchNet)
 * **Preprocessing**: Tokenization using Hugging Face tokenizers, context window slicing, and sequence padding.
 
-## 🖼️ Gradio Interface
+## Gradio Interface
 
 An interactive **Gradio UI** was developed to:
 
@@ -50,7 +50,7 @@ An interactive **Gradio UI** was developed to:
 * Compare multiple models in real-time
 * Support developer-friendly experimentation
 
-## 🔮 Future Work
+## Future Work
 
 * Extend support for **multi-line code prediction**
 * Evaluate models on **larger and more diverse code datasets**
